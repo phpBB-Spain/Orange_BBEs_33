@@ -1,0 +1,805 @@
+/*  phpBB3 Style Sheet
+    --------------------------------------------------------------
+	Style name:			Orange BBEs
+	Based on style:		prosilver (the default phpBB 3.3.x style)
+	Original author:	Tom Beddard ( http://www.subblue.com/ )
+	Modified by:		phpBB Spain ( http://www.phpbb-es.com )
+    --------------------------------------------------------------
+*/
+
+/* Orange BBEs 
+--------------------------------------------- */
+
+html, body {
+  	background-color: #E18935;
+}
+
+body {
+  	margin: 0;
+  	font-family: 'Source Sans Pro','Arial','Helvetica',sans-serif;
+  	font-size: 11px;
+}
+ 
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #000000;
+    font-family: 'BebasNeueRegular','Arial','Helvetica',sans-serif;
+    line-height: normal;
+	font-weight: 150;
+	text-rendering: optimizeLegibility;/* Fix for webkit rendering, well at least for the time being */
+    -webkit-font-smoothing: antialiased;/* Fix for webkit rendering, well at least for the time being */
+}
+
+/* Logo Orange BBEs
+---------------------------------------- */
+
+.logo {
+    float: left;
+    width: auto;
+    padding: 5px 5px 5px 5px;
+}
+
+.site_logo {
+	background-image: url("./images/BBEs_logo.png");
+    display: inline-block;
+    width: 290px;
+    height: 86px;
+}
+
+/* Round cornered boxes and backgrounds
+---------------------------------------- */
+.headerbar {
+	background-color: #FAD983;
+	background-image: url("./images/bg_header.gif");
+	color: #000000;
+}
+
+.navbar {
+	background-color: #F0D9A5;
+}
+
+.forabg {
+	background-color: #FFD741;
+	background-image: url("./images/bg_list.gif");
+}
+
+.forumbg {
+	background-color: #FAD983;
+	background-image: url("./images/bg_list.gif");
+}
+
+.panel {
+    background-color: #F9EBB6;
+    color: #000000;
+}
+
+.post:target .content {
+	color: #000000;
+}
+
+.post:target h3 a {
+	color: #000000;
+}
+
+.bg1 {
+	background-color: #F9E289;
+}
+
+.bg2 {
+	background-color: #F9E289;
+}
+
+.bg3 {
+	background-color: #F0D9A5;
+}
+
+table.table1 tbody tr:hover, table.table1 tbody tr.hover {
+	background-color: #F0D9A5;
+	color: #000;
+}
+
+table.zebra-list tr:nth-child(odd) td, ul.zebra-list li:nth-child(odd) {
+	background-color: #F9E289;
+}
+
+table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
+	background-color: #F9E289;
+}
+
+.ucprowbg {
+	background-color: #DCDEE2;
+}
+
+.fieldsbg {
+	background-color: #E7E8EA;
+}
+
+.search-header {
+    box-shadow: 0px 0px 10px #E9A24D;
+}
+
+/*
+--------------------------------------------------------------
+Colours and backgrounds for content.css
+-------------------------------------------------------------- */
+
+ul.forums {
+	background-color: #F9EBB7;
+	background-image: none;
+}
+
+ul.topiclist li {
+	color: #4C5D77;
+}
+
+ul.topiclist dd {
+	border-left-color: #FFFFFF;
+}
+
+.rtl ul.topiclist dd {
+	border-right-color: #FFFFFF;
+	border-left-color: transparent;
+}
+
+li.row {
+	border-top-color:  #FFFFFF;
+	border-bottom-color: #F9EBB7;
+}
+
+li.row strong {
+	color: #000000;
+}
+
+li.row:hover {
+	background-color: #F6F4D0;
+}
+
+li.row:hover dd {
+	border-left-color: #CCCCCC;
+}
+
+.rtl li.row:hover dd {
+	border-right-color: #CCCCCC;
+	border-left-color: transparent;
+}
+
+li.header dt, li.header dd {
+	color: #F6F4D0;
+}
+
+ul.topiclist li.row dd {
+	padding: 4px 0 999px 0;
+	margin-bottom: -995px;
+}
+
+ /* Forum list column styles */
+.row .list-inner { padding: 4px 0; }
+
+/* Post body styles
+----------------------------------------*/
+.postbody {
+	color: #333333;
+}
+
+/* Content container styles
+----------------------------------------*/
+.content {
+	color: #333333;
+}
+
+.content h2, .panel h2 {
+	color: #CD6600;
+	border-bottom-color: #CD6600;
+}
+
+dl.faq dt {
+	color: #333333;
+}
+
+.posthilit {
+	background-color: #F3BFCC;
+	color: #BC2A4D;
+}
+
+.announce, .unreadpost {
+	/* Highlight the announcements & unread posts box */
+}
+
+/* Post signature */
+.signature {
+	border-top-color: #CCCCCC;
+}
+
+/* Post noticies */
+.notice {
+	border-top-color:  #CCCCCC;
+}
+
+/* BB Code styles
+----------------------------------------*/
+/* Quote block */
+blockquote {
+	background-color: #F0D9A5;
+	border-color:#FFFFFF;
+}
+
+.rtl blockquote {
+	background-image: url("./images/quote_rtl.gif");
+}
+
+blockquote blockquote {
+	/* Nested quotes */
+	background-color:#FAD983;
+}
+
+blockquote blockquote blockquote {
+	/* Nested quotes */
+	background-color: #F0D9A5;
+}
+
+/* Code block */
+.codebox {
+	background-color: #EFE2C0;
+	background-image: url("./images/code.png");
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	border-color: #EAB71B;
+}
+
+.codebox p {
+	border-bottom-color:  #CCCCCC;
+}
+
+.codebox code {
+	color: #000;
+}
+
+.syntaxbg	{ color: #FFFFFF; }
+.syntaxcomment	{ color: #FF8000; }
+.syntaxdefault	{ color: #0000BB; }
+.syntaxhtml	{ color: #000000; }
+.syntaxkeyword	{ color: #007700; }
+.syntaxstring	{ color: #DD0000; }
+
+/* Attachments
+----------------------------------------*/
+.attachbox {
+	background-color: #FAD983;
+	border-color:  #D44A25;
+}
+
+.pm-message .attachbox {
+	background-color: #FAD983;
+}
+
+.attachbox dd {
+	border-top-color: #FFFFFF;
+}
+
+.attachbox p {
+	color: #666666;
+}
+
+.attachbox p.stats {
+	color: #666666;
+}
+
+.attach-image img {
+	border-color: #999999;
+}
+
+/* Inline image thumbnails */
+
+dl.file dd {
+	color: #666666;
+}
+
+dl.thumbnail img {
+	border-color: #666666;
+	background-color: #FFFFFF;
+}
+
+dl.thumbnail dd {
+	color: #666666;
+}
+
+dl.thumbnail dt a:hover {
+	background-color: #EEEEEE;
+}
+
+dl.thumbnail dt a:hover img {
+	border-color: #368AD2;
+}
+
+div.rules {
+	background-color: #EDCA3D;
+	color: #FC0000;
+}
+
+p.post-notice {
+	background-color: #EDCA3D;
+	background-image: none;
+}
+
+/* CP tabbed menu
+----------------------------------------*/
+#tabs .tab > a {
+	background: #F9EBB6;
+}
+
+#tabs .tab > a:hover {
+	background: #F9E289;
+	color: #BC2A4D;
+}
+
+#tabs .activetab > a {
+	background: #F0D9A5;
+}
+
+#tabs .activetab > a:hover {
+	background: #F0D9A5;
+	background: -moz-linear-gradient(top, #E2F2FF 0%, #F0D9A5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #E2F2FF), color-stop(100%, #F0D9A5));
+	background: -webkit-linear-gradient(top, #E2F2FF 0%, #F0D9A5 100%);
+	background: -o-linear-gradient(top, #E2F2FF 0%, #F0D9A5 100%);
+	background: -ms-linear-gradient(top, #E2F2FF 0%, #F0D9A5 100%);
+	background: linear-gradient(to bottom, #E2F2FF 0%, #F0D9A5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E2F2FF', endColorstr='#F0D9A5', GradientType=0 );
+	box-shadow: 0 1px 1px #F2F9FF inset;
+	color: #333333;
+}
+
+#tabs .activetab > a:hover {
+	background: #F0D9A5;
+	color: #000000;
+}
+
+/* Mini tabbed menu used in MCP
+----------------------------------------*/
+#minitabs .tab > a {
+	background-color: #E1EBF2;
+}
+
+#minitabs .activetab > a,
+#minitabs .activetab > a:hover {
+	background-color: #F9F9F9;
+	color: #333333;
+}
+
+/* UCP navigation menu
+----------------------------------------*/
+
+/* Link styles for the sub-section links */
+#navigation a {
+	color: #333333;
+	background: #F9EBB6;
+	background: -moz-linear-gradient(left, #F9EBB6 50%, #F9F9F9 100%);
+	background: -webkit-gradient(left top, right top, color-stop(50%, #F9EBB6), color-stop(100%, #F9F9F9));
+	background: -webkit-linear-gradient(left, #F9EBB6 50%, #F9F9F9 100%);
+	background: -o-linear-gradient(left, #F9EBB6 50%, #F9F9F9 100%);
+	background: -ms-linear-gradient(left, #F9EBB6 50%, #F9F9F9 100%);
+	background: linear-gradient(to right, #F9EBB6 50%, #F9F9F9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F9EBB6', endColorstr='#F9F9F9', GradientType=1 );
+}
+
+.rtl #navigation a {
+	background: #F9EBB6;
+	background: -moz-linear-gradient(left, #F9F9F9 0%, #F9EBB6 50%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, #F9F9F9), color-stop(50%, #F9EBB6));
+	background: -webkit-linear-gradient(left, #F9F9F9 0%, #F9EBB6 50%);
+	background: -o-linear-gradient(left, #F9F9F9 0%, #F9EBB6 50%);
+	background: -ms-linear-gradient(left, #F9F9F9 0%, #F9EBB6 50%);
+	background: linear-gradient(to right, #F9F9F9 0%, #F9EBB6 50%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F9F9F9', endColorstr='#F9EBB6', GradientType=1 );
+}
+
+#navigation a:hover {
+	background: #F9E289;
+	color: #BC2A4D;
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+#navigation #active-subsection a {
+	background: #F9F9F9;
+	color: #D31141;
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+#navigation #active-subsection a:hover {
+	color: #D31141;
+}
+
+@media only screen and (max-width: 900px), only screen and (max-device-width: 900px)
+{
+	#navigation a, .rtl #navigation a {
+	background: #B2C2CF;
+	}
+}
+
+.dropdown-extended ul li {
+	border-top-color: #B9B9B9;
+}
+
+.dropdown-extended ul li:hover {
+	background-color: #F6F4D0;
+	color: #000000;
+}
+
+.dropdown-extended .header, .dropdown-extended .footer {
+	border-color: #B9B9B9;
+	color: #000000;
+}
+
+.dropdown-extended .footer {
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+
+.dropdown-extended .header {
+	background: #D77118;
+	background: -moz-linear-gradient(top, #D77118 0%, #EEB25D 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #D77118), color-stop(100%, #EEB25D));
+	background: -webkit-linear-gradient(top, #D77118 0%, #EEB25D 100%);
+	background: -o-linear-gradient(top, #D77118 0%, #EEB25D 100%);
+	background: -ms-linear-gradient(top, #D77118 0%, #EEB25D 100%);
+	background: linear-gradient(to bottom, #D77118 0%, #EEB25D 100%);
+	text-shadow: none;
+}
+
+.dropdown .pointer {
+	border-color: #D77118 transparent;
+}
+
+.dropdown .pointer-inner {
+	border-color: #FFFFFF transparent;
+}
+
+.dropdown-extended .pointer-inner {
+	border-color: #D77118 transparent;
+}
+
+.dropdown .dropdown-contents {
+	border-color: #D77118;
+}
+
+/* Notification mark read link */
+.dropdown-extended a.mark_read {
+	background-color: #F6F4D0;
+}
+
+/* Pagination
+---------------------------------------- */
+
+ /* Pagination in viewforum for multipage topics */
+ .row .pagination {
+ 	display: block;
+	margin-top: 3px;
+	margin-bottom: 3px;
+ }
+ 
+.pagination li a {
+	color: #5C758C;
+	background-color: #F0D9A5;
+	border-color: #000000;
+}
+
+.pagination li.ellipsis span {
+	background-color: transparent;
+	color:	#000000;
+}
+
+.pagination li.active span {
+	color: #000000;
+	background-color: #FBCF76;
+	border-color: #000000;
+}
+
+.pagination li a:hover, .pagination .dropdown-visible a.dropdown-trigger, .nojs .pagination .dropdown-container:hover a.dropdown-trigger {
+	border-color: #000000;
+	background-color: #F9E289;
+	color: #000000;
+}
+
+/*
+--------------------------------------------------------------
+Colours and backgrounds for buttons.css
+-------------------------------------------------------------- */
+.button {
+	border-color: #FFA64D;
+	background-color: #F9E289;
+	background-image: -moz-linear-gradient(top, #F9E289, #FFFFFF);
+	background-image: -webkit-linear-gradient(top, #F9E289, #FFFFFF);
+	background-image: -o-linear-gradient(top, #F9E289, #FFFFFF);
+	background-image: linear-gradient(to bottom, #F9E289, #FFFFFF);
+    font-family: 'BebasNeueRegular','Arial','Helvetica',sans-serif;
+	font-weight: 600;
+	height: auto;
+	line-height: 18px;
+	text-transform: uppercase;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#F9E289', EndColorStr='#FFFFFF')";
+	box-shadow: 0 0 0 1px #F9E289 inset;
+	-webkit-box-shadow: 0 0 0 1px #F9E289 inset;
+	transition: all 0.2s;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #000000;
+}
+
+.dropdown-select {
+	color: #536482;
+}
+
+.button:hover, .dropdown-visible .dropdown-select, .nojs .dropdown-container:hover .dropdown-select {
+	border-color: #FFA64D;
+	background-image: -moz-linear-gradient(top, #FFFFFF, #F9E289);
+	background-image: -webkit-linear-gradient(top, #FFFFFF, #F9E289);
+	background-image: -o-linear-gradient(top, #FFFFFF, #F9E289);
+	background-image: linear-gradient(to bottom, #FFFFFF, #F9E289);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFFFFF', EndColorStr='#F9E289')";
+	text-shadow: 1px 1px 0 #FFFFFF, -1px -1px 0 #F9E289, -1px -1px 0 rgba(188, 42, 77, 0.2);
+}
+
+.dropdown-select:after	{ border-color: #FFA64D; }
+.dropdown-select:hover	{ border-color: #FFA64D; }
+
+.dropdown-visible .dropdown-select, .dropdown-visible .dropdown-select:hover, .nojs .dropdown-container:hover .dropdown-select {
+	border-color: #FFA64D;
+	color: #105289;
+}
+
+.contact-icons a	{ border-color: #DCDCDC; }
+.contact-icons a:hover	{ background-color: #F2F6F9; }
+
+.btn-toolbar .btn-group, .btn-toolbar .input-group {
+    	float: left;
+}
+.btn-group, .btn-group-vertical {
+    	position: relative;
+    	display: inline-block;
+    	vertical-align: middle;
+}
+
+/* Responsive tabs
+----------------------------------------*/
+.responsive-tab .responsive-tab-link:before {
+	border-color: #536482;
+}
+
+.responsive-tab .responsive-tab-link:hover:before {
+	border-color: #BC2A4D;
+}
+
+/* Form button styles
+---------------------------------------- */
+
+a.button1, input.button1, input.button3, a.button2, input.button2 {
+	border-color: #FFA64D;
+	background-color: #F9E289;
+	background-image: -moz-linear-gradient(top, #F9E289, #FFFFFF);
+	background-image: -webkit-linear-gradient(top, #F9E289, #FFFFFF);
+	background-image: -o-linear-gradient(top, #F9E289, #FFFFFF);
+	background-image: linear-gradient(to bottom, #F9E289, #FFFFFF);
+    font-family: 'BebasNeueRegular','Arial','Helvetica',sans-serif;
+	font-weight: bold;
+	height: auto;
+	line-height: 17px;
+	text-transform: uppercase;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#F9E289', EndColorStr='#FFFFFF')";
+	box-shadow: 0 0 0 1px #F9E289 inset;
+	-webkit-box-shadow: 0 0 0 1px #F9E289 inset;
+	transition: all 0.2s;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #000000;
+}
+
+a.button1, input.button1 {
+	border-color: #BC2A4D;
+}
+
+input.button3 {
+	background-image: none;
+}
+
+/* Alternative button */
+a.button2, input.button2, input.button3 {
+	border-color: #E18935;
+}
+
+/* Top Button Orange BBEs */
+.back2top .top {
+    float: right;
+    margin-right: -5px;
+    margin-top: 0;
+}
+
+/* <a> button in the style of the form buttons */
+a.button1, a.button2 {
+	color: #000000;
+}
+
+/* <a> button in the style of the form buttons */
+a.button1, a.button1:link, a.button1:visited, a.button1:active, a.button2, a.button2:link, a.button2:visited, a.button2:active {
+	text-decoration: none;
+	padding: 2px 8px;
+	line-height: 250%;
+	vertical-align: text-bottom;
+	background-position: 0 1px;
+}
+
+/* Hover states */
+a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
+	border-color: #FFA64D;
+	background-image: -moz-linear-gradient(top, #FFFFFF, #F9E289);
+	background-image: -webkit-linear-gradient(top, #FFFFFF, #F9E289);
+	background-image: -o-linear-gradient(top, #FFFFFF, #F9E289);
+	background-image: linear-gradient(to bottom, #FFFFFF, #F9E289);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFFFFF', EndColorStr='#F9E289')";
+	text-shadow: 1px 1px 0 #FFFFFF, -1px -1px 0 #F9E289, -1px -1px 0 rgba(188, 42, 77, 0.2);
+}
+
+/* Focus states */
+input.button1:focus, input.button2:focus, input.button3:focus {
+	border-color: #E18935;
+	color: #0F4987;
+}
+
+.search-box button.search-icon {
+    border-radius: 0;
+    font-size: 12;
+    height: 24px;
+    margin: 0;
+    padding: 3px 5px;
+}
+
+input.disabled {
+	color: #666666;
+}
+
+/* Jumpbox */
+.jumpbox .dropdown li {
+	border-top-color: #CCCCCC;
+}
+
+.jumpbox-cat-link {
+	background-color: #E18935;
+	border-top-color: #E18935;
+	color: #FFFFFF;
+}
+
+.jumpbox-cat-link:hover {
+	background-color: #F0D9A5;
+	border-top-color: #F0D9A5;
+	color: #000000;
+}
+
+.jumpbox-forum-link {
+	background-color: #F0D9A5;
+}
+
+.jumpbox-forum-link:hover {
+	background-color: #E1EBF2;
+}
+
+.jumpbox .dropdown .pointer-inner {
+	border-color: #E1EBF2 transparent;
+}
+
+.jumpbox-sub-link {
+	background-color: #F6F4D0;
+}
+
+.jumpbox-sub-link:hover {
+	background-color: #F0D9A5;
+}
+
+/* Online/Offline status Orange BBEs */
+.online {
+	background-image: url(./images/icons/icon_user_online.gif);
+	background-size: 5px;
+	background-position: 100% 0%;
+    background-repeat: repeat-y;
+}
+
+.offline {
+	background-image: url(./images/icons/icon_user_offline.gif);
+	background-size: 5px;
+	background-position: 100% 0%;
+    background-repeat: repeat-y;
+}
+
+ /* Miscellaneous styles
+ ---------------------------------------- */
+.copyright {
+	font-size: 10px;
+ 	text-align: center;
+	padding: 10px;
+}
+
+.footer-row {
+	font-size: 10px;
+	line-height: 1.8;
+	margin: 0;
+}
+
+/* Forum icons & Topic icons */
+
+.global_read					{ background-image: url("./images/icons/announce_read.png"); }
+.global_read_mine				{ background-image: url("./images/icons/announce_read_mine.png"); }
+.global_read_locked				{ background-image: url("./images/icons/announce_read_locked.png"); }
+.global_read_locked_mine		{ background-image: url("./images/icons/announce_read_locked_mine.png"); }
+.global_unread					{ background-image: url("./images/icons/announce_unread.png"); }
+.global_unread_mine				{ background-image: url("./images/icons/announce_unread_mine.png"); }
+.global_unread_locked			{ background-image: url("./images/icons/announce_unread_locked.png"); }
+.global_unread_locked_mine		{ background-image: url("./images/icons/announce_unread_locked_mine.png"); }
+
+.announce_read					{ background-image: url("./images/icons/announce_read.png"); }
+.announce_read_mine				{ background-image: url("./images/icons/announce_read_mine.png"); }
+.announce_read_locked			{ background-image: url("./images/icons/announce_read_locked.png"); }
+.announce_read_locked_mine		{ background-image: url("./images/icons/announce_read_locked_mine.png"); }
+.announce_unread				{ background-image: url("./images/icons/announce_unread.png"); }
+.announce_unread_mine			{ background-image: url("./images/icons/announce_unread_mine.png"); }
+.announce_unread_locked			{ background-image: url("./images/icons/announce_unread_locked.png"); }
+.announce_unread_locked_mine	{ background-image: url("./images/icons/announce_unread_locked_mine.png"); }
+
+.forum_link					{ background-image: url("./images/icons/forum_link.png"); }
+.forum_read					{ background-image: url("./images/icons/forum_read.png"); }
+.forum_read_locked			{ background-image: url("./images/icons/forum_read_locked.png"); }
+.forum_read_subforum		{ background-image: url("./images/icons/forum_read_subforum.png"); }
+.forum_unread				{ background-image: url("./images/icons/forum_unread.png"); }
+.forum_unread_locked		{ background-image: url("./images/icons/forum_unread_locked.png"); }
+.forum_unread_subforum		{ background-image: url("./images/icons/forum_unread_subforum.png"); }
+
+.sticky_read				{ background-image: url("./images/icons/sticky_read.png"); }
+.sticky_read_mine			{ background-image: url("./images/icons/sticky_read_mine.png"); }
+.sticky_read_locked			{ background-image: url("./images/icons/sticky_read_locked.png"); }
+.sticky_read_locked_mine	{ background-image: url("./images/icons/sticky_read_locked_mine.png"); }
+.sticky_unread				{ background-image: url("./images/icons/sticky_unread.png"); }
+.sticky_unread_mine			{ background-image: url("./images/icons/sticky_unread_mine.png"); }
+.sticky_unread_locked		{ background-image: url("./images/icons/sticky_unread_locked.png"); }
+.sticky_unread_locked_mine	{ background-image: url("./images/icons/sticky_unread_locked_mine.png"); }
+
+.topic_moved				{ background-image: url("./images/icons/topic_moved.png"); }
+.topic_read					{ background-image: url("./images/icons/topic_read.png"); }
+.topic_read_mine			{ background-image: url("./images/icons/topic_read_mine.png"); }
+.topic_read_hot				{ background-image: url("./images/icons/topic_read_hot.png"); }
+.topic_read_hot_mine		{ background-image: url("./images/icons/topic_read_hot_mine.png"); }
+.topic_read_locked			{ background-image: url("./images/icons/topic_read_locked.png"); }
+.topic_read_locked_mine		{ background-image: url("./images/icons/topic_read_locked_mine.png"); }
+.topic_unread				{ background-image: url("./images/icons/topic_unread.png"); }
+.topic_unread_mine			{ background-image: url("./images/icons/topic_unread_mine.png"); }
+.topic_unread_hot			{ background-image: url("./images/icons/topic_unread_hot.png"); }
+.topic_unread_hot_mine		{ background-image: url("./images/icons/topic_unread_hot_mine.png"); }
+.topic_unread_locked		{ background-image: url("./images/icons/topic_unread_locked.png"); }
+.topic_unread_locked_mine	{ background-image: url("./images/icons/topic_unread_locked_mine.png"); }
+
+.pm_read					{ background-image: url("./images/icons/topic_read.png"); }
+.pm_unread					{ background-image: url("./images/icons/topic_unread.png"); }
+
+li.row strong {
+	font-weight: bold;
+	color: inherit;
+}
+
+/* Small changes responsive Orange BBEs */
+
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+	.site_logo {
+	background-image: url("./images/BBEs_logo_small.png");
+	display: inline-block;
+	width: 200px;
+	height: 80px;
+	}
+
+	.logo {
+	/* change display value to inline-block to show logo */
+	display: block;
+	float: none;
+	padding: 10px;
+	}
+
+	.postprofile .avatar img {
+    width: auto !important;
+    height: auto !important;
+    max-height: 46px;
+	}
+}
