@@ -780,6 +780,11 @@ li.row strong {
 	color: inherit;
 }
 
+.cc-color-override--1687565279.cc-window {
+    background-color: #b0b0b0;
+	color: rgb(255, 255, 255);
+}
+
 /* Small changes responsive Orange BBEs */
 
 @media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
