@@ -49,7 +49,8 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 ---------------------------------------- */
 .headerbar {
 	background-color: #FAD983;
-	background-image: url("./images/bg_header.gif");
+	background-image: -webkit-linear-gradient(top, #DD7A26 0%, #F5C772 2px, #DD7A26 92px, #E48F3B 100%);
+    background-image: linear-gradient(to bottom, #DD7A26 0%, #F5C772 2px, #DD7A26 92px, #E48F3B 100%);
 	color: #000000;
 }
 
@@ -59,12 +60,14 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 .forabg {
 	background-color: #FFD741;
-	background-image: url("./images/bg_list.gif");
+	background-image: -webkit-linear-gradient(top, #DE7A26 0%, #DD7A26 2px, #DD7A26 92px, #E48F3B 100%);
+    background-image: linear-gradient(to bottom, #DE7A26 0%, #DD7A26 2px, #DD7A26 92px, #E48F3B 100%);
 }
 
 .forumbg {
 	background-color: #FAD983;
-	background-image: url("./images/bg_list.gif");
+	background-image: -webkit-linear-gradient(top, #DE7A26 0%, #DD7A26 2px, #DD7A26 92px, #E48F3B 100%);
+    background-image: linear-gradient(to bottom, #DE7A26 0%, #DD7A26 2px, #DD7A26 92px, #E48F3B 100%);
 }
 
 .panel {
