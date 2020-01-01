@@ -694,7 +694,7 @@ input.disabled {
 }
 
 .jumpbox .dropdown .pointer-inner {
-	border-color: #E1EBF2 transparent;
+	border-color: #F6F4D0 transparent;
 }
 
 .jumpbox-sub-link {
@@ -702,7 +702,7 @@ input.disabled {
 }
 
 .jumpbox-sub-link:hover {
-	background-color: #F0D9A5;
+	background-color: #F6F4D0;
 }
 
 /* Online/Offline status Orange BBEs */
