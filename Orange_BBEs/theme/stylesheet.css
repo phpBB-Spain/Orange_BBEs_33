@@ -658,7 +658,7 @@ input.button1:focus, input.button2:focus, input.button3:focus {
 
 .search-box button.search-icon {
     border-radius: 0;
-    font-size: 12;
+    font-size: 12px;
     height: 24px;
     margin: 0;
     padding: 3px 5px;
