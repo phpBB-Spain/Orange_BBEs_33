@@ -3,7 +3,7 @@
 	Style name:			Orange BBEs
 	Based on style:		prosilver (the default phpBB 3.3.x style)
 	Original author:	Tom Beddard ( http://www.subblue.com/ )
-	Modified by:		phpBB Spain ( http://www.phpbb-es.com )
+	Modified by:		phpBB Spain ( https://www.phpbb-es.com )
     --------------------------------------------------------------
 */
 
@@ -233,10 +233,6 @@ dl.faq dt {
 blockquote {
 	background-color: #F0D9A5;
 	border-color:#FFFFFF;
-}
-
-.rtl blockquote {
-	background-image: url("./images/quote_rtl.gif");
 }
 
 blockquote blockquote {
