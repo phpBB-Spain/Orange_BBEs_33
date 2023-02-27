@@ -636,6 +636,7 @@ a.button1, a.button1:link, a.button1:visited, a.button1:active, a.button2, a.but
 }
 
 /* Hover states */
+
 a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
 	border-color: #FFA64D;
 	background-image: -moz-linear-gradient(top, #FFFFFF, #F9E289);
@@ -647,6 +648,7 @@ a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, inpu
 }
 
 /* Focus states */
+
 input.button1:focus, input.button2:focus, input.button3:focus {
 	border-color: #E18935;
 	color: #0F4987;
@@ -716,8 +718,8 @@ input.disabled {
     background-repeat: repeat-y;
 }
 
- /* Miscellaneous styles
- ---------------------------------------- */
+/* Miscellaneous styles
+----------------------------------------- */
 .copyright {
 	font-size: 10px;
  	text-align: center;
@@ -797,6 +799,12 @@ li.row strong {
 .phpbb_alert {
     background-color: #F0D9A5;
     border-color: #000000;
+}
+
+/* CSS Extensions */
+
+#phpbb_announcement {
+	background-color: #F0D9A5; /* OrangeBBEs colour */
 }
 
 /* Small changes responsive Orange BBEs */
